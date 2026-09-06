@@ -11,7 +11,7 @@ dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();
 
 const products={
   'coffee-table':{
-    title:'Coffin coffee tables',
+    title:'Coffin coffee table',
     image:'assets/coffin-coffee-table.webp',
     alt:'Black coffin-shaped open coffee table with gold fittings',
     description:'A striking, practical centrepiece built from a coffin and finished to suit the room it is made for.',
@@ -25,11 +25,32 @@ const products={
     features:['Interior and exterior colours chosen with you','Shelf spacing planned around what you want to display','Lighting and decorative details can be discussed','Freestanding designs made for individual spaces']
   },
   ottoman:{
-    title:'Coffin ottomans & storage',
+    title:'Coffin ottoman / storage',
     image:'assets/coffin-ottoman.webp',
     alt:'Black coffin ottoman with gold handles and hairpin legs',
     description:'Hidden storage with unmistakable character, made with an upholstered or solid top and finished as a useful piece of furniture.',
     features:['Upholstered or solid top options','Choice of fabric, colour and fittings','Useful internal storage','Leg height and overall finish tailored to order']
+  },
+  bar:{
+    title:'Coffin bar / drinks cabinet',
+    image:'assets/coffin-shelving.webp',
+    alt:'Example coffin furniture by GJ’s Emporium',
+    description:'A coffin transformed into a bold home bar or drinks cabinet, designed around the bottles, glasses and accessories you want to store or display.',
+    features:['Open shelving or cabinet-style layouts','Bottle and glass storage planned around your collection','Optional lighting and decorative details','Colours, handles and fittings chosen with you']
+  },
+  cabinet:{
+    title:'Coffin display cabinet',
+    image:'assets/coffin-coffee-table.webp',
+    alt:'Example coffin furniture by GJ’s Emporium',
+    description:'A made-to-order coffin display cabinet for collectables, curiosities or statement storage, with the internal layout designed around what you want to showcase.',
+    features:['Open or enclosed display options','Custom shelf spacing','Choice of interior and exterior finish','Lighting and hardware can be discussed']
+  },
+  bespoke:{
+    title:'Bespoke coffin build',
+    image:'assets/hero-bg.webp',
+    alt:'Gothic furniture and curiosities by GJ’s Emporium',
+    description:'Have an idea that does not fit a standard category? Garry can work with you on a completely individual coffin-based piece, from a TV unit or bookcase to a bar, cabinet or something new.',
+    features:['Start with your idea, room and measurements','Design developed around how you want to use it','Colours, fittings and layout tailored to you','Unusual ideas are absolutely welcome']
   }
 };
 const productDialog=document.querySelector('.product-dialog');
