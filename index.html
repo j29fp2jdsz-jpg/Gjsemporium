@@ -16,82 +16,103 @@
     <a class="brand" href="#top" aria-label="GJ's Emporium home"><span class="brand-script">GJ's Emporium</span><small>GARRY J THOMAS</small></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" aria-label="Main navigation">
-      <a href="#coffin-furniture">Current pieces</a><a href="#previous-work">Previous work</a><a href="#about">About</a><a class="nav-cta" href="#contact">Get in touch</a>
+      <a href="#coffin-furniture">Available to order</a><a href="#previous-work">Previously sold</a><a href="#about">About</a><a class="nav-cta" href="#contact">Get in touch</a>
     </nav>
   </header>
+
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Up-cycler &amp; furniture maker · South Wales</p>
         <h1>Unusual furniture,<br>made to be used.</h1>
         <p class="intro">Bespoke coffin furniture and original upcycled pieces, handmade by Garry J Thomas in Treharris.</p>
-        <div class="hero-actions"><a class="button" href="#previous-work">See previous work</a><a class="plain-link" href="#contact">Discuss a commission</a></div>
+        <div class="hero-actions"><a class="button" href="#coffin-furniture">See what can be made</a><a class="plain-link" href="#contact">Discuss a commission</a></div>
       </div>
     </section>
-    <section class="intro-band" id="coffin-furniture">
-      <div><p class="eyebrow">Current pieces available</p><h2>Signature designs, made to order.</h2></div>
-      <p>Garry can source coffins for new builds and tailor the colour, fittings, lighting and layout to suit your space. These are the core styles he can currently demonstrate; anything else can be discussed as a bespoke build.</p>
+
+    <section class="carousel-section current-carousel-section" id="coffin-furniture">
+      <div class="carousel-heading">
+        <div><p class="eyebrow">Available to order</p><h2>Coffin furniture, made your way.</h2></div>
+        <p>Garry can source coffins for new builds and tailor the colour, fittings, lighting and layout to suit your space. Swipe, use the arrows or let the gallery move automatically.</p>
+      </div>
+
+      <div class="showcase-carousel" data-showcase-carousel aria-label="Made-to-order coffin furniture">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <figure class="carousel-slide is-active">
+              <img src="assets/coffin-gallery.webp" alt="Examples of coffin display shelving and cabinet builds by GJ's Emporium">
+              <figcaption><strong>Coffin display builds</strong><span>Lighting, colours and shelf layouts can all be tailored.</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/coffin-coffee-table.webp" alt="Black coffin-shaped coffee table with gold fittings">
+              <figcaption><strong>Coffin coffee table</strong><span>A statement centrepiece made to order.</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/coffin-shelving.webp" alt="Black, red and grey coffin display shelving">
+              <figcaption><strong>Coffin display shelving</strong><span>Statement storage for collections, curiosities and displays.</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/coffin-ottoman.webp" alt="Black coffin ottoman with gold handles and hairpin legs">
+              <figcaption><strong>Coffin ottoman / storage</strong><span>Hidden storage with unmistakable character.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous image">‹</button>
+        <button class="carousel-arrow carousel-next" type="button" aria-label="Next image">›</button>
+        <div class="carousel-dots" aria-label="Choose image"></div>
+      </div>
+      <div class="carousel-cta"><a class="button" href="#contact">Enquire about a build</a></div>
     </section>
-    <section class="signature-grid signature-grid-clean" aria-label="Current GJ's Emporium coffin furniture">
-      <button class="order-card" type="button" data-product="coffee-table">
-        <img src="assets/coffin-coffee-table.webp" alt="Black coffin-shaped open coffee table with gold fittings">
-        <span class="availability">Made to order</span>
-        <span class="order-card-copy"><span class="number">01</span><span><strong>Coffin coffee table</strong><small>A statement centrepiece, built around your preferred colour and finish.</small><em>View details</em></span></span>
-      </button>
-      <button class="order-card" type="button" data-product="shelving">
-        <span class="card-carousel" data-carousel>
-          <img class="is-active" src="assets/coffin-shelving.webp" alt="Black, red and grey coffin display shelving">
-          <img src="assets/coffin-gallery.webp" alt="Alternative coffin display build by GJ's Emporium">
-        </span>
-        <span class="availability">Made to order</span>
-        <span class="order-card-copy"><span class="number">02</span><span><strong>Coffin display shelving</strong><small>Statement shelving with optional lighting, custom colours and fittings.</small><em>View details</em></span></span>
-      </button>
-      <button class="order-card" type="button" data-product="ottoman">
-        <img src="assets/coffin-ottoman.webp" alt="Black coffin ottoman with gold handles and hairpin legs">
-        <span class="availability">Made to order</span>
-        <span class="order-card-copy"><span class="number">03</span><span><strong>Coffin ottoman / storage</strong><small>Hidden storage with an upholstered or solid top.</small><em>View details</em></span></span>
-      </button>
-      <button class="order-card bespoke-card" type="button" data-product="bespoke">
-        <span class="bespoke-card-art"><span class="bespoke-mark">GJ</span><span class="bespoke-lines"></span></span>
-        <span class="availability">Your idea</span>
-        <span class="order-card-copy"><span class="number">04</span><span><strong>Bespoke coffin build</strong><small>Bar, cabinet, bookcase, TV unit or something completely different.</small><em>Start an idea</em></span></span>
-      </button>
-    </section>
-    <section class="work" id="previous-work">
-      <div class="section-heading"><div><p class="eyebrow">Selected pieces</p><h2>Previous work</h2></div><p>A selection of bespoke builds and furniture given a new life. These pieces have found homes, but they show what can be created.</p></div>
-      <div class="gallery">
-        <button class="gallery-item gallery-wide" type="button" data-title="Piano cocktail bar"><img src="assets/piano-bar.webp" alt="White upright piano transformed into an illuminated cocktail bar"><span>Piano cocktail bar</span></button>
-        <button class="gallery-item" type="button" data-title="Geometric sideboard"><img src="assets/geometric-sideboard.webp" alt="Black, orange and grey geometric sideboard"><span>Geometric sideboard</span></button>
-        <button class="gallery-item" type="button" data-title="Gothic sideboard"><img src="assets/gothic-sideboard.webp" alt="Black sideboard with gold handles and patterned top"><span>Gothic sideboard</span></button>
-        <button class="gallery-item" type="button" data-title="Restored pine drawers"><img src="assets/green-sideboard.webp" alt="Restored green and natural wood drawers"><span>Restored pine drawers</span></button>
-        <button class="gallery-item gallery-wide" type="button" data-title="Floral statement drawers"><img src="assets/floral-drawers.webp" alt="Black chest of drawers with bright floral and skull artwork"><span>Floral statement drawers</span></button>
+
+    <section class="carousel-section sold-carousel-section" id="previous-work">
+      <div class="carousel-heading">
+        <div><p class="eyebrow">Previously sold</p><h2>Pieces that have already found homes.</h2></div>
+        <p>These are past commissions and restored pieces rather than current stock, but they show the range of styles Garry can create.</p>
+      </div>
+
+      <div class="showcase-carousel showcase-carousel-light" data-showcase-carousel aria-label="Previously sold furniture">
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <figure class="carousel-slide is-active">
+              <img src="assets/piano-bar.webp" alt="White upright piano transformed into an illuminated cocktail bar">
+              <figcaption><strong>Piano cocktail bar</strong><span>Previously sold</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/geometric-sideboard.webp" alt="Black, orange and grey geometric sideboard">
+              <figcaption><strong>Geometric sideboard</strong><span>Previously sold</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/gothic-sideboard.webp" alt="Black sideboard with gold handles and patterned top">
+              <figcaption><strong>Gothic sideboard</strong><span>Previously sold</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/green-sideboard.webp" alt="Restored green and natural wood drawers">
+              <figcaption><strong>Restored pine drawers</strong><span>Previously sold</span></figcaption>
+            </figure>
+            <figure class="carousel-slide">
+              <img src="assets/floral-drawers.webp" alt="Black chest of drawers with bright floral and skull artwork">
+              <figcaption><strong>Floral statement drawers</strong><span>Previously sold</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous image">‹</button>
+        <button class="carousel-arrow carousel-next" type="button" aria-label="Next image">›</button>
+        <div class="carousel-dots" aria-label="Choose image"></div>
       </div>
     </section>
+
     <section class="about" id="about">
       <p class="eyebrow">About GJ's Emporium</p>
       <div class="about-grid"><h2>Old, unloved and tired furniture—given a new story.</h2><div><p>Garry restores, refurbishes and reworks furniture from his base in Treharris. Some pieces begin with an existing item; others are designed around a customer's idea and measurements.</p><p>The result is useful furniture with character: carefully finished, completely individual and saved from being forgotten.</p></div></div>
     </section>
+
     <section class="contact" id="contact">
       <div><p class="eyebrow">Bespoke commissions</p><h2>Got an idea?</h2><p>Send Garry a message with the type of piece, preferred colours and approximate size. He will talk you through what is possible.</p></div>
       <div class="contact-links"><a class="button" href="https://www.facebook.com/61556531277288" target="_blank" rel="noreferrer">Message on Facebook</a><a href="mailto:garrythomas1966@hotmail.co.uk">garrythomas1966@hotmail.co.uk</a><a href="tel:+447740396333">07740 396333</a></div>
     </section>
   </main>
+
   <footer><div class="brand"><span class="brand-script">GJ's Emporium</span><small>GARRY J THOMAS</small></div><p>Up-cycler &amp; furniture maker · Treharris, South Wales</p></footer>
-  <dialog class="product-dialog" aria-labelledby="product-title">
-    <button class="dialog-close" type="button" aria-label="Close product details">×</button>
-    <div class="product-dialog-grid">
-      <div class="product-media"><img class="product-image" src="" alt=""></div>
-      <div class="product-copy">
-        <p class="eyebrow">Made to order</p>
-        <h2 id="product-title"></h2>
-        <p class="product-description"></p>
-        <ul class="product-features"></ul>
-        <p class="product-price">Price quoted for each commission</p>
-        <a class="button product-enquiry" href="#contact">Enquire about this piece</a>
-      </div>
-    </div>
-  </dialog>
-  <dialog class="lightbox"><button type="button" aria-label="Close image">×</button><img alt=""><p></p></dialog>
   <script src="assets/site.js"></script>
 </body>
 </html>
