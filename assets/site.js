@@ -47,8 +47,8 @@ const products={
   },
   bespoke:{
     title:'Bespoke coffin build',
-    image:'assets/hero-bg.webp',
-    alt:'Gothic furniture and curiosities by GJ’s Emporium',
+    image:'assets/coffin-gallery.webp',
+    alt:'Examples of coffin display shelving and cabinet builds by GJ’s Emporium',
     description:'Have an idea that does not fit a standard category? Garry can work with you on a completely individual coffin-based piece, from a TV unit or bookcase to a bar, cabinet or something new.',
     features:['Start with your idea, room and measurements','Design developed around how you want to use it','Colours, fittings and layout tailored to you','Unusual ideas are absolutely welcome']
   }
