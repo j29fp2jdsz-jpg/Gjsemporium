@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/assets/available-vanity.jpg", "destination": "/assets/stock-vanity.svg", "permanent": false },
+    { "source": "/assets/available-drawers.jpg", "destination": "/assets/stock-drawers.svg", "permanent": false },
+    { "source": "/assets/available-cabinet.jpg", "destination": "/assets/stock-cabinet.svg", "permanent": false },
+    { "source": "/assets/available-guitar.jpg", "destination": "/assets/stock-guitar.svg", "permanent": false }
+  ]
+}
