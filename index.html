@@ -30,45 +30,37 @@
     </section>
     <section class="intro-band" id="coffin-furniture">
       <div><p class="eyebrow">Current pieces available</p><h2>Signature designs, made to order.</h2></div>
-      <p>These GJ's Emporium coffin designs are available to commission. Garry can source coffins for new builds, then tailor the finish, fittings and layout to suit your space. Select a piece to see more.</p>
+      <p>Garry can source coffins for new builds and tailor the colour, fittings, lighting and layout to suit your space. These are the core styles he can currently demonstrate; anything else can be discussed as a bespoke build.</p>
     </section>
-    <section class="signature-grid" aria-label="Current GJ's Emporium coffin furniture">
+    <section class="signature-grid signature-grid-clean" aria-label="Current GJ's Emporium coffin furniture">
       <button class="order-card" type="button" data-product="coffee-table">
         <img src="assets/coffin-coffee-table.webp" alt="Black coffin-shaped open coffee table with gold fittings">
         <span class="availability">Made to order</span>
         <span class="order-card-copy"><span class="number">01</span><span><strong>Coffin coffee table</strong><small>A statement centrepiece, built around your preferred colour and finish.</small><em>View details</em></span></span>
       </button>
       <button class="order-card" type="button" data-product="shelving">
-        <img src="assets/coffin-shelving.webp" alt="Black, red and grey coffin display shelving">
+        <span class="card-carousel" data-carousel>
+          <img class="is-active" src="assets/coffin-shelving.webp" alt="Black, red and grey coffin display shelving">
+          <img src="assets/coffin-gallery.webp" alt="Alternative coffin display build by GJ's Emporium">
+        </span>
         <span class="availability">Made to order</span>
-        <span class="order-card-copy"><span class="number">02</span><span><strong>Coffin display shelving</strong><small>Full-height statement storage for collections, curiosities and displays.</small><em>View details</em></span></span>
+        <span class="order-card-copy"><span class="number">02</span><span><strong>Coffin display shelving</strong><small>Statement shelving with optional lighting, custom colours and fittings.</small><em>View details</em></span></span>
       </button>
       <button class="order-card" type="button" data-product="ottoman">
         <img src="assets/coffin-ottoman.webp" alt="Black coffin ottoman with gold handles and hairpin legs">
         <span class="availability">Made to order</span>
         <span class="order-card-copy"><span class="number">03</span><span><strong>Coffin ottoman / storage</strong><small>Hidden storage with an upholstered or solid top.</small><em>View details</em></span></span>
       </button>
-      <button class="order-card" type="button" data-product="bar">
-        <img src="assets/coffin-shelving.webp" alt="Example coffin furniture by GJ's Emporium">
-        <span class="availability">Available to commission</span>
-        <span class="order-card-copy"><span class="number">04</span><span><strong>Coffin bar / drinks cabinet</strong><small>A dramatic home bar or drinks display designed around your collection.</small><em>View details</em></span></span>
-      </button>
-      <button class="order-card" type="button" data-product="cabinet">
-        <img src="assets/coffin-coffee-table.webp" alt="Example coffin furniture by GJ's Emporium">
-        <span class="availability">Available to commission</span>
-        <span class="order-card-copy"><span class="number">05</span><span><strong>Coffin display cabinet</strong><small>Enclosed or open display storage with a finish chosen to suit the room.</small><em>View details</em></span></span>
-      </button>
-      <button class="order-card" type="button" data-product="bespoke">
-        <img src="assets/coffin-gallery.webp" alt="Examples of coffin display shelving and cabinet builds by GJ's Emporium">
+      <button class="order-card bespoke-card" type="button" data-product="bespoke">
+        <span class="bespoke-card-art"><span class="bespoke-mark">GJ</span><span class="bespoke-lines"></span></span>
         <span class="availability">Your idea</span>
-        <span class="order-card-copy"><span class="number">06</span><span><strong>Bespoke coffin build</strong><small>TV unit, bookcase, cabinet, bar or something completely different.</small><em>Start an idea</em></span></span>
+        <span class="order-card-copy"><span class="number">04</span><span><strong>Bespoke coffin build</strong><small>Bar, cabinet, bookcase, TV unit or something completely different.</small><em>Start an idea</em></span></span>
       </button>
     </section>
     <section class="work" id="previous-work">
       <div class="section-heading"><div><p class="eyebrow">Selected pieces</p><h2>Previous work</h2></div><p>A selection of bespoke builds and furniture given a new life. These pieces have found homes, but they show what can be created.</p></div>
       <div class="gallery">
-        <button class="gallery-item gallery-wide" type="button" data-title="Coffin display shelving"><img src="assets/coffin-shelving.webp" alt="Black, red and grey coffin display shelving"><span>Coffin display shelving</span></button>
-        <button class="gallery-item" type="button" data-title="Piano cocktail bar"><img src="assets/piano-bar.webp" alt="White upright piano transformed into an illuminated cocktail bar"><span>Piano cocktail bar</span></button>
+        <button class="gallery-item gallery-wide" type="button" data-title="Piano cocktail bar"><img src="assets/piano-bar.webp" alt="White upright piano transformed into an illuminated cocktail bar"><span>Piano cocktail bar</span></button>
         <button class="gallery-item" type="button" data-title="Geometric sideboard"><img src="assets/geometric-sideboard.webp" alt="Black, orange and grey geometric sideboard"><span>Geometric sideboard</span></button>
         <button class="gallery-item" type="button" data-title="Gothic sideboard"><img src="assets/gothic-sideboard.webp" alt="Black sideboard with gold handles and patterned top"><span>Gothic sideboard</span></button>
         <button class="gallery-item" type="button" data-title="Restored pine drawers"><img src="assets/green-sideboard.webp" alt="Restored green and natural wood drawers"><span>Restored pine drawers</span></button>
@@ -88,7 +80,7 @@
   <dialog class="product-dialog" aria-labelledby="product-title">
     <button class="dialog-close" type="button" aria-label="Close product details">×</button>
     <div class="product-dialog-grid">
-      <img class="product-image" src="" alt="">
+      <div class="product-media"><img class="product-image" src="" alt=""></div>
       <div class="product-copy">
         <p class="eyebrow">Made to order</p>
         <h2 id="product-title"></h2>
