@@ -2,12 +2,25 @@ const menu=document.querySelector('.menu-button');
 const nav=document.querySelector('#site-nav');
 menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
 nav?.addEventListener('click',()=>{nav.classList.remove('open');menu?.setAttribute('aria-expanded','false');});
+
 const dialog=document.querySelector('.lightbox');
 document.querySelectorAll('.gallery-item').forEach(item=>item.addEventListener('click',()=>{
   const source=item.querySelector('img');dialog.querySelector('img').src=source.src;dialog.querySelector('img').alt=source.alt;dialog.querySelector('p').textContent=item.dataset.title;dialog.showModal();
 }));
 dialog.querySelector('button')?.addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close();});
+
+// Auto-rotate the real coffin display imagery used on the shelving card.
+document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+  const slides=[...carousel.querySelectorAll('img')];
+  if(slides.length<2)return;
+  let index=0;
+  setInterval(()=>{
+    slides[index].classList.remove('is-active');
+    index=(index+1)%slides.length;
+    slides[index].classList.add('is-active');
+  },2800);
+});
 
 const products={
   'coffee-table':{
@@ -19,10 +32,10 @@ const products={
   },
   shelving:{
     title:'Coffin display shelving',
-    image:'assets/coffin-shelving.webp',
-    alt:'Black, red and grey coffin display shelving',
-    description:'A full-height coffin transformed into statement shelving for collectables, curiosities, plants or personal displays.',
-    features:['Interior and exterior colours chosen with you','Shelf spacing planned around what you want to display','Lighting and decorative details can be discussed','Freestanding designs made for individual spaces']
+    image:'assets/coffin-gallery.webp',
+    alt:'Examples of coffin display shelving by GJ’s Emporium',
+    description:'Full-height coffin shelving transformed into statement storage for collections, curiosities and displays, with finishes ranging from subtle to fully illuminated.',
+    features:['Interior and exterior colours chosen with you','Shelf spacing planned around what you want to display','Optional lighting and decorative details','Freestanding designs made for individual spaces']
   },
   ottoman:{
     title:'Coffin ottoman / storage',
@@ -31,28 +44,15 @@ const products={
     description:'Hidden storage with unmistakable character, made with an upholstered or solid top and finished as a useful piece of furniture.',
     features:['Upholstered or solid top options','Choice of fabric, colour and fittings','Useful internal storage','Leg height and overall finish tailored to order']
   },
-  bar:{
-    title:'Coffin bar / drinks cabinet',
-    image:'assets/coffin-shelving.webp',
-    alt:'Example coffin furniture by GJ’s Emporium',
-    description:'A coffin transformed into a bold home bar or drinks cabinet, designed around the bottles, glasses and accessories you want to store or display.',
-    features:['Open shelving or cabinet-style layouts','Bottle and glass storage planned around your collection','Optional lighting and decorative details','Colours, handles and fittings chosen with you']
-  },
-  cabinet:{
-    title:'Coffin display cabinet',
-    image:'assets/coffin-coffee-table.webp',
-    alt:'Example coffin furniture by GJ’s Emporium',
-    description:'A made-to-order coffin display cabinet for collectables, curiosities or statement storage, with the internal layout designed around what you want to showcase.',
-    features:['Open or enclosed display options','Custom shelf spacing','Choice of interior and exterior finish','Lighting and hardware can be discussed']
-  },
   bespoke:{
     title:'Bespoke coffin build',
-    image:'assets/coffin-gallery.webp',
-    alt:'Examples of coffin display shelving and cabinet builds by GJ’s Emporium',
-    description:'Have an idea that does not fit a standard category? Garry can work with you on a completely individual coffin-based piece, from a TV unit or bookcase to a bar, cabinet or something new.',
+    image:'assets/hero-bg.webp',
+    alt:'Gothic furniture setting representing bespoke GJ’s Emporium commissions',
+    description:'Have an idea that does not fit a standard category? Garry can work with you on a completely individual coffin-based piece, from a bar or cabinet to a bookcase, TV unit or something entirely new.',
     features:['Start with your idea, room and measurements','Design developed around how you want to use it','Colours, fittings and layout tailored to you','Unusual ideas are absolutely welcome']
   }
 };
+
 const productDialog=document.querySelector('.product-dialog');
 document.querySelectorAll('.order-card').forEach(card=>card.addEventListener('click',()=>{
   const product=products[card.dataset.product];
