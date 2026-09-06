@@ -14,7 +14,9 @@ document.querySelectorAll('[data-showcase-carousel]').forEach(carousel=>{
   const prev=carousel.querySelector('.carousel-prev');
   const next=carousel.querySelector('.carousel-next');
   const dotsWrap=carousel.querySelector('.carousel-dots');
-  let index=0;
+  const isCurrent=!!carousel.closest('.current-carousel-section');
+  const initialIndex=isCurrent && slides.length>4 ? 4 : 0;
+  let index=initialIndex;
   let timer=null;
   let startX=null;
 
@@ -62,6 +64,6 @@ document.querySelectorAll('[data-showcase-carousel]').forEach(carousel=>{
   carousel.addEventListener('mouseenter',()=>clearInterval(timer));
   carousel.addEventListener('mouseleave',restart);
 
-  show(0);
+  show(initialIndex);
   restart();
 });
