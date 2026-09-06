@@ -92,14 +92,14 @@ function openCarouselImage(image) {
   if (!carouselLightbox) return;
   lightboxTrigger = image;
   const enlarged = carouselLightbox.querySelector('img');
-  const title = image.closest('.carousel-slide')?.querySelector('figcaption strong')?.textContent || image.alt;
+  const title = image.dataset.enlargeTitle || image.closest('.carousel-slide')?.querySelector('figcaption strong')?.textContent || image.alt;
   enlarged.src = image.currentSrc || image.src;
   enlarged.alt = image.alt;
   carouselLightbox.querySelector('p').textContent = title;
   carouselLightbox.showModal();
 }
 
-document.querySelectorAll('.carousel-slide img').forEach((image) => {
+document.querySelectorAll('.carousel-slide img, [data-enlarge-image]').forEach((image) => {
   image.tabIndex = image.closest('.carousel-slide')?.classList.contains('is-active') ? 0 : -1;
   image.setAttribute('role', 'button');
   image.setAttribute('aria-label', `Enlarge image: ${image.alt}`);
