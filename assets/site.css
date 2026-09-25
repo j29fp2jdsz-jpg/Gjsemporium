@@ -229,3 +229,16 @@
  .subpage .page-cta{min-height:0;padding:64px 24px 70px}
  .direct-enquiry{flex-direction:column;align-items:flex-start}
 }
+
+
+/* Curated collection galleries: two-up editorial tiles on desktop, full-width on mobile */
+.subpage:not(.subpage-available) .portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:22px;padding:22px}
+.subpage:not(.subpage-available) .portfolio-grid figure,
+.subpage:not(.subpage-available) .portfolio-grid .span2{grid-column:auto;grid-row:auto;height:auto;background:#15110e}
+.subpage:not(.subpage-available) .portfolio-grid figure img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;background:#0c0a09}
+.subpage:not(.subpage-available) .portfolio-grid figcaption{position:relative;padding:15px 16px 17px;background:#15110e}
+.subpage-modern .portfolio-grid figure img{background:#cec4b6}
+@media(max-width:760px){
+ .subpage:not(.subpage-available) .portfolio-grid{grid-template-columns:1fr;gap:18px;padding:16px}
+ .subpage:not(.subpage-available) .portfolio-grid figure img{aspect-ratio:auto;max-height:none}
+}
