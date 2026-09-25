@@ -242,3 +242,20 @@
  .subpage:not(.subpage-available) .portfolio-grid{grid-template-columns:1fr;gap:18px;padding:16px}
  .subpage:not(.subpage-available) .portfolio-grid figure img{aspect-ratio:auto;max-height:none}
 }
+
+/* Conversion pass — clear routes, per-piece actions and trust */
+.buying-routes{padding:80px clamp(28px,7vw,105px);background:#eee8de;color:#17120f;display:grid;grid-template-columns:.8fr 1.8fr;gap:60px}
+.buying-routes h2{font:600 clamp(46px,5vw,72px)/.86 "Cormorant Garamond",serif;margin:16px 0}.buying-routes h2 em{color:#a44d27}
+.route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#b9ad9e;border:1px solid #b9ad9e}
+.route-grid a{background:#f5f0e7;color:#17120f;padding:30px;min-height:250px;display:flex;flex-direction:column}
+.route-grid span,.process-steps span{font:500 10px Oswald,sans-serif;letter-spacing:.12em;color:#a44d27}
+.route-grid h3{font:600 28px/1 "Cormorant Garamond",serif;margin:35px 0 12px}.route-grid p{font-size:15px;line-height:1.5;margin:0 0 22px}.route-grid strong{margin-top:auto;font:500 10px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.1em}
+.trust-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:0;background:#e7dfd3;color:#342b25;border-top:1px solid #c9bcac;border-bottom:1px solid #c9bcac}
+.trust-strip span{padding:18px 28px;font:500 10px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.1em;border-right:1px solid #c9bcac}.trust-strip span:last-child{border-right:0}
+.range-list{grid-column:2/4;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.range-list span{border:1px solid rgba(238,232,222,.25);padding:9px 12px;font:500 10px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.process-steps{grid-column:2/4;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#c8bcae;margin-top:18px}.process-steps>div{background:#f5f0e7;padding:20px}.process-steps strong{display:block;font:600 20px "Cormorant Garamond",serif;margin:8px 0}.process-steps p{font-size:13px!important;line-height:1.45!important;margin:0}
+.piece-enquiry{display:block;margin-top:8px;color:#d98555;font:500 9px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.09em}.subpage-modern .piece-enquiry{color:#7e381d}
+.stock-enquiry{display:block;width:max-content;max-width:100%;margin-top:18px;border-bottom:1px solid #9e4521;padding-bottom:5px;color:#7c351b;font:500 10px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.09em}
+.subpage-archive .portfolio-grid figcaption span{display:block;margin-top:5px;color:#9e8d7d;font-size:9px}
+@media(max-width:900px){.buying-routes{grid-template-columns:1fr}.route-grid{grid-template-columns:1fr}.route-grid a{min-height:190px}.range-list,.process-steps{grid-column:auto}}
+@media(max-width:760px){.buying-routes{padding:58px 24px;gap:34px}.route-grid{grid-template-columns:1fr}.route-grid a{min-height:0;padding:25px}.route-grid h3{margin-top:22px}.trust-strip{display:grid;grid-template-columns:1fr 1fr}.trust-strip span{border-bottom:1px solid #c9bcac;padding:15px 16px}.process-steps{grid-template-columns:1fr}.range-list{margin:20px 0}.piece-enquiry{margin-top:10px}}
