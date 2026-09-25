@@ -53,3 +53,6 @@
  .modern-grid figure:nth-child(4){height:280px}
  .proof-strip figure,.proof-strip figure:first-child{height:300px}
 }
+
+/* fifth current-stock piece gets a deliberate editorial span */
+.shop-grid .featured-stock{grid-column:span 2}.shop-grid .featured-stock .shop-img{height:420px}.shop-grid .featured-stock .shop-img img{object-position:center 62%}@media(max-width:760px){.shop-grid .featured-stock{grid-column:1/-1}.shop-grid .featured-stock .shop-img{height:390px}}@media(max-width:420px){.shop-grid .featured-stock .shop-img{height:350px}}
