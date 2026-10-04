@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gjs-emporium-wale.vercel.app/sitemap.xml
+Sitemap: https://www.gjs-emporium.com/sitemap.xml
