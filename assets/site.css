@@ -405,3 +405,21 @@
  .compact-hero .hero-photo picture img{object-fit:cover;object-position:center}
  .compact-hero .hero-shade{background:linear-gradient(90deg,#090807 0%,#090807 44%,rgba(9,8,7,.7) 53%,rgba(9,8,7,.05) 70%,transparent 100%)}
 }
+
+
+/* Meet Garry: balanced editorial portrait, preserving the original image */
+.home-maker{display:grid;grid-template-columns:minmax(0,43%) minmax(0,57%);align-items:stretch;min-height:410px;background:#171311}
+.home-maker-photo{position:relative;min-width:0;min-height:410px;display:flex;align-items:center;justify-content:center;overflow:hidden;isolation:isolate;background:#211a18}
+.home-maker-photo::before{content:"";position:absolute;inset:-24px;background:linear-gradient(90deg,rgba(16,12,12,.45),rgba(16,12,12,.3)),url("../IMG_5219.jpeg") center / cover no-repeat;filter:blur(25px) brightness(.55);z-index:-1}
+.home-maker .home-maker-photo>img{position:relative;display:block;width:auto;height:360px;max-width:80%;object-fit:contain;box-shadow:0 14px 42px rgba(0,0,0,.35)}
+.home-maker .home-maker-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:42px clamp(30px,5vw,78px)}
+.home-maker .home-maker-copy h2{font-size:clamp(38px,4vw,60px);line-height:1;max-width:570px;margin:12px 0 18px}
+.home-maker .home-maker-copy p:not(.kicker){font-size:16px;max-width:540px;margin:0 0 16px}
+.home-maker .home-maker-copy .text-link{margin-top:12px}
+@media(max-width:760px){
+ .home-maker{grid-template-columns:minmax(0,1fr);min-height:0}
+ .home-maker-photo{min-height:0;padding:22px 20px}
+ .home-maker .home-maker-photo>img{width:auto;height:auto;max-width:100%;max-height:320px}
+ .home-maker .home-maker-copy{padding:30px 24px 42px}
+ .home-maker .home-maker-copy h2{font-size:clamp(36px,9vw,44px)}
+}
