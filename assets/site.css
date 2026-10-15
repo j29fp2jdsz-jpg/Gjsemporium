@@ -396,3 +396,12 @@
  .compact-hero .hero-content h1{font-size:clamp(39px,4.3vw,52px)}
  .compact-hero .hero-actions{gap:14px;flex-wrap:wrap}
 }
+
+/* Ensure responsive picture fills its allocated frame on desktop and mobile */
+.compact-hero .hero-photo picture{display:block;width:100%;height:100%}
+.compact-hero .hero-photo picture img{display:block;width:100%;height:100%}
+@media(min-width:761px){
+ .compact-hero .hero-photo{background:#16110f}
+ .compact-hero .hero-photo picture img{object-fit:cover;object-position:center}
+ .compact-hero .hero-shade{background:linear-gradient(90deg,#090807 0%,#090807 44%,rgba(9,8,7,.7) 53%,rgba(9,8,7,.05) 70%,transparent 100%)}
+}
