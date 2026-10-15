@@ -437,3 +437,9 @@
  .compact-hero .hero-photo>img{display:block;position:relative;width:100%;height:auto;max-width:none;object-fit:contain;object-position:center;transform:none}
  .compact-hero .hero-shade{background:linear-gradient(0deg,#090707 0%,rgba(9,7,7,.97) 26%,rgba(9,7,7,.78) 47%,rgba(9,7,7,.06) 83%)}
 }
+
+/* Product catalogue: fit whole furniture photos rather than crop them */
+.home-stock-grid .home-product img{width:100%;height:clamp(210px,24vw,310px);object-fit:contain;object-position:center;background:#f0ede8;padding:10px;box-sizing:border-box}
+@media(max-width:760px){
+ .home-stock-grid .home-product img{height:clamp(155px,43vw,230px);padding:6px}
+}
