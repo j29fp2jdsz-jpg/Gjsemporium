@@ -471,3 +471,10 @@
 .home-carousel-wrap .home-upcoming small{display:none}
 .home-carousel-wrap .home-upcoming span b{font:inherit;color:inherit}
 @media(max-width:760px){.home-carousel-wrap .home-category img{height:205px}.home-carousel-wrap .home-category span{min-height:54px}}
+
+/* Available Now catalogue: show entire original furniture photographs */
+.subpage-available .stock-page article{min-width:0;overflow:hidden}
+.subpage-available .stock-page article>img{display:block;width:100%;height:clamp(290px,36vw,470px);max-height:none;aspect-ratio:auto;object-fit:contain;object-position:center;background:#e8e1d7;padding:14px;box-sizing:border-box}
+@media(max-width:760px){
+ .subpage-available .stock-page article>img{height:clamp(260px,85vw,410px);padding:10px}
+}
