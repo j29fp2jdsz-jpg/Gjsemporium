@@ -355,3 +355,11 @@
  .home-contact h2{font-size:39px}
 }
 @media(max-width:380px){.compact-hero{height:455px;min-height:455px}.home-category img{height:115px}.home-product img{height:150px}}
+
+/* Hero photo: keep product visible and headline legible on both screen sizes */
+.compact-hero .hero-photo img{object-position:70% 48%}
+.compact-hero .hero-shade{background:linear-gradient(90deg,rgba(9,8,7,.96) 0%,rgba(9,8,7,.88) 32%,rgba(9,8,7,.46) 62%,rgba(9,8,7,.12) 100%)}
+@media(max-width:760px){
+ .compact-hero .hero-photo img{object-position:58% 40%}
+ .compact-hero .hero-shade{background:linear-gradient(0deg,rgba(9,8,7,.97) 0%,rgba(9,8,7,.87) 40%,rgba(9,8,7,.16) 100%)}
+}
