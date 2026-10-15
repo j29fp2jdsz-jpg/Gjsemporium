@@ -522,3 +522,22 @@
 .retro-kitchenette-thumbs button:focus-visible{outline:2px solid #ae6239;outline-offset:2px}
 .retro-kitchenette-thumbs button img{width:100%;height:65px;object-fit:contain;display:block}
 @media(max-width:760px){.stock-page .retro-kitchenette-gallery>#retro-kitchenette-main{height:clamp(260px,85vw,410px)}.retro-kitchenette-thumbs button img{height:50px}}
+
+/* Available Now horizontal carousel, consistent cards on all screens */
+.home-stock-carousel{display:flex;align-items:center;gap:10px;min-width:0}
+.home-stock-carousel .home-stock-grid{display:flex!important;grid-template-columns:none!important;flex:1;min-width:0;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-x:contain;align-items:stretch}
+.home-stock-carousel .home-stock-grid::-webkit-scrollbar{display:none}
+.home-stock-carousel .home-product{display:flex!important;flex-direction:column;flex:0 0 calc((100% - 32px)/3);min-width:0;scroll-snap-align:start;text-decoration:none}
+.home-stock-carousel .home-product img{height:clamp(190px,22vw,280px);width:100%;object-fit:contain;background:#f0ede8;box-sizing:border-box;padding:9px}
+.home-stock-carousel .home-product span{display:flex!important;align-items:baseline;justify-content:flex-start;gap:6px 12px;flex-wrap:wrap;margin:0;padding:11px 3px 4px;line-height:1.35}
+.home-stock-carousel .home-product strong{display:inline!important;margin:0!important;white-space:nowrap}
+.home-stock-arrow{flex:0 0 38px;height:46px;border:1px solid #a9633e;background:#211813;color:#eec5a2;border-radius:3px;font-size:32px;line-height:1;cursor:pointer}
+.home-stock-arrow:hover,.home-stock-arrow:focus-visible{background:#a9633e;color:white}
+@media(max-width:760px){
+ .home-stock-carousel{gap:6px}
+ .home-stock-arrow{flex-basis:28px;height:38px;font-size:25px}
+ .home-stock-carousel .home-stock-grid{gap:10px}
+ .home-stock-carousel .home-product{flex-basis:82%}
+ .home-stock-carousel .home-product img{height:clamp(240px,66vw,340px);padding:8px}
+ .home-stock-carousel .home-product span{font-size:15px}
+}
