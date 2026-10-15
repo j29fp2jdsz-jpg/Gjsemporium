@@ -443,3 +443,22 @@
 @media(max-width:760px){
  .home-stock-grid .home-product img{height:clamp(155px,43vw,230px);padding:6px}
 }
+
+/* Compact, accessible work carousel: swipe on touch and arrows on desktop */
+.home-carousel-wrap{position:relative;display:flex;align-items:center;gap:10px;min-width:0}
+.home-carousel-wrap .home-category-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;min-width:0;flex:1;overscroll-behavior-x:contain}
+.home-carousel-wrap .home-category-grid::-webkit-scrollbar{display:none}
+.home-carousel-wrap .home-category{display:block;flex:0 0 calc((100% - 32px)/3);min-width:0;scroll-snap-align:start}
+.home-carousel-arrow{flex:0 0 38px;height:46px;border:1px solid #b87545;background:#1a1412;color:#f1d3b5;font-size:32px;line-height:1;cursor:pointer;border-radius:3px}
+.home-carousel-arrow:hover,.home-carousel-arrow:focus-visible{background:#a94c29;color:white}
+.home-upcoming{background:#1e1917;color:#eee2d6;cursor:default}
+.home-upcoming img{object-fit:contain!important;background:#29221e}
+.home-upcoming span{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.home-upcoming span b{font:700 10px/1.2 sans-serif;letter-spacing:.08em;color:#df9360;white-space:nowrap}
+.home-upcoming small{display:block;padding:0 12px 14px;color:#cfb7a2;font-size:12px}
+@media(max-width:760px){
+ .home-carousel-wrap{gap:6px}
+ .home-carousel-arrow{flex-basis:28px;height:38px;font-size:25px}
+ .home-carousel-wrap .home-category-grid{gap:10px}
+ .home-carousel-wrap .home-category{flex-basis:82%}
+}
