@@ -300,3 +300,9 @@
 @media(max-width:420px){
  .portal>div,.portal.right-copy>div{width:calc(100% - 48px);margin:-58px auto 0;padding:26px 0 38px}
 }
+
+/* Preserve full workshop portraits and upcoming project photos on mobile */
+@media(max-width:760px){
+  .maker-photo{height:auto!important;overflow:visible!important}
+  .maker-photo img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;position:static!important}
+}
