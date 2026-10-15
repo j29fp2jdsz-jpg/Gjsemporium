@@ -462,3 +462,12 @@
  .home-carousel-wrap .home-category-grid{gap:10px}
  .home-carousel-wrap .home-category{flex-basis:82%}
 }
+
+/* Uniform work carousel cards; descriptions live on their own pages */
+.home-carousel-wrap .home-category-grid{align-items:stretch}
+.home-carousel-wrap .home-category{display:flex;flex-direction:column;align-self:stretch;justify-content:flex-start;height:auto;overflow:hidden}
+.home-carousel-wrap .home-category img{display:block;width:100%;height:clamp(155px,18vw,230px);object-fit:contain;background:#241e1a;padding:8px;box-sizing:border-box;flex-shrink:0}
+.home-carousel-wrap .home-category span{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:58px;padding:12px 14px;box-sizing:border-box}
+.home-carousel-wrap .home-upcoming small{display:none}
+.home-carousel-wrap .home-upcoming span b{font:inherit;color:inherit}
+@media(max-width:760px){.home-carousel-wrap .home-category img{height:205px}.home-carousel-wrap .home-category span{min-height:54px}}
