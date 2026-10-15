@@ -497,3 +497,8 @@
 .subpage-upcoming .portfolio-grid figcaption h2{font:600 clamp(30px,4vw,44px)/1.1 "Cormorant Garamond",serif;letter-spacing:-.02em;text-transform:none;margin:0 0 12px;color:#f2e9de}
 .subpage-upcoming .portfolio-grid figcaption span{display:block;font:500 11px/1.5 Oswald,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:#c08a63!important;margin:0 0 15px}
 .subpage-upcoming .portfolio-grid figcaption p{font:400 clamp(15px,2vw,18px)/1.65 "Source Sans 3",sans-serif!important;text-transform:none!important;letter-spacing:normal!important;margin:0;max-width:720px;color:#d9d0c5}
+
+/* Keep each product name and its price together below the photo */
+.home-stock-grid .home-product span{display:flex;align-items:baseline;justify-content:flex-start;flex-wrap:wrap;gap:4px 12px;padding:12px 3px 3px;font-size:15px;line-height:1.35}
+.home-stock-grid .home-product strong{display:inline-block;white-space:nowrap;font-weight:700;color:#8f4324;margin:0}
+@media(max-width:760px){.home-stock-grid .home-product span{display:flex;gap:3px 8px;font-size:13px;padding:9px 2px 2px}.home-stock-grid .home-product strong{display:inline-block;margin:0}}
