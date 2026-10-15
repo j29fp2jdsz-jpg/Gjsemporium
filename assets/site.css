@@ -502,3 +502,12 @@
 .home-stock-grid .home-product span{display:flex;align-items:baseline;justify-content:flex-start;flex-wrap:wrap;gap:4px 12px;padding:12px 3px 3px;font-size:15px;line-height:1.35}
 .home-stock-grid .home-product strong{display:inline-block;white-space:nowrap;font-weight:700;color:#8f4324;margin:0}
 @media(max-width:760px){.home-stock-grid .home-product span{display:flex;gap:3px 8px;font-size:13px;padding:9px 2px 2px}.home-stock-grid .home-product strong{display:inline-block;margin:0}}
+
+/* Meet Garry: fill portrait panel with a softly blurred workshop backdrop */
+@media(min-width:761px){
+ .home-maker{grid-template-columns:minmax(0,44%) minmax(0,56%);min-height:390px}
+ .home-maker-photo{min-height:390px;padding:20px;box-sizing:border-box;background:#29201c}
+ .home-maker-photo::before{inset:-10px;filter:blur(12px) brightness(.78);background:linear-gradient(90deg,rgba(20,15,13,.18),rgba(20,15,13,.24)),url("../IMG_5219.jpeg") center center / cover no-repeat}
+ .home-maker .home-maker-photo>img{height:350px;max-height:calc(100% - 24px);max-width:85%;width:auto;object-fit:contain;box-shadow:0 12px 35px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.13)}
+ .home-maker .home-maker-copy{padding:32px clamp(26px,4vw,62px)}
+}
