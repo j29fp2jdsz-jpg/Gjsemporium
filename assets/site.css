@@ -430,3 +430,10 @@
  .compact-hero .hero-photo>img{display:block;width:100%;height:100%;object-fit:contain;object-position:center top}
  .compact-hero .hero-shade{background:linear-gradient(0deg,rgba(8,6,6,.97) 0%,rgba(8,6,6,.89) 28%,rgba(8,6,6,.18) 66%,rgba(8,6,6,.04) 100%)}
 }
+
+/* Mobile hero framing: show the whole sideboard, not a cropped close-up */
+@media(max-width:760px){
+ .compact-hero .hero-photo{display:flex;align-items:flex-start;justify-content:center;overflow:hidden;background:#100c0b}
+ .compact-hero .hero-photo>img{display:block;position:relative;width:100%;height:auto;max-width:none;object-fit:contain;object-position:center;transform:none}
+ .compact-hero .hero-shade{background:linear-gradient(0deg,#090707 0%,rgba(9,7,7,.97) 26%,rgba(9,7,7,.78) 47%,rgba(9,7,7,.06) 83%)}
+}
